@@ -1,0 +1,38 @@
+<h1>Edit a Cat!!</h1>
+
+<form action="/cats" method= "POST" >
+    <input type="hidden" _method="Update">
+
+    <label for="name">Name</label>
+    <input name = "cat[name]" id="name" type="text">
+
+    <br>
+    <label for="birthday">Birthday</label>
+    <input name = "cat[birthday]" id = "birthday" type="date">
+
+    <br>
+    <label for="color">Color</label>
+    <select name="cat[color]" id="color">
+        <option disabled selected >-select color-</option>
+        <option value="black">Black</option>
+        <option value="brown">Brown</option>
+        <option value="white">White</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+    </select>
+
+    <br>
+    <label for="sex">Sex</label>
+    <select name="cat[sex]" id="sex">
+        <option disabled selected >-select sex-</option>
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+    </select>
+
+    <br>
+    <label for="description">Description</label>
+    <textarea name="cat[description]" id="description" cols="30" rows="10"></textarea>
+
+    <button>Create Cat!</button>
+
+</form>
